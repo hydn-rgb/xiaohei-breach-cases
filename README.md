@@ -31,6 +31,11 @@ tags: [security, threat-modeling, red-team, defense, breach-simulation, attacker
 
 - 机会型黑产勒索团伙 / 扫描型 APT（公开通识画像）
 - 国内安全厂商公开信源（火绒/360）/ 国际知名黑客（仅作手法画像，不点名指控）
+- 社区同类工具参考（一手页面核实，非榜单）：[MITRE ATT&CK](https://attack.mitre.org)（手法字典）、[Atomic Red Team](https://github.com/redcanaryco/atomic-red-team)（检测测试库）、[Apache CALDERA](https://github.com/apache/caldera)（重型模拟平台，官方警告勿暴露公网）、[OWASP Threat Dragon](https://github.com/OWASP/threat-dragon)（威胁建模画图）。小黑只借用它们的手法分类做自查，不运行其攻击能力。
+
+## 新项目默认安检
+
+新项目/新方案立项时，**默认先过一遍小黑入侵预演**再开发：只读观察暴露面 → 按红队手法清单逐条自查 → 输出分级结论（🔴高危/🟡待加固/🟢已防/⚪未实测）→ 全标 `DEGRADED`。不执行真实攻击、不读密钥、不改配置。
 
 ## 配套
 
